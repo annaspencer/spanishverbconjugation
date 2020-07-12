@@ -14,7 +14,6 @@ let dataId = 0;
 
 let verbs = JSON.parse(localStorage.getItem("verbs")) || [];
 
-
 for (let i = 0; i < verbs.length; i++) {
   let newTr = document.createElement('tr');
     newTr.id = 'data' + dataId;
@@ -60,8 +59,8 @@ function submitData(evt){
       nosotrosInput.value = '';
       ellosInput.value = '';
       
-      verbs.push({ verbData: verbData, transData: transData, yoData: yoData, tuData: tuData, elData: elData, nosData: nosData, ellosData: ellosData});
-      localStorage.setItem("verbs", JSON.stringify(savedVerbs));
+    verbs.push({ verbData: verbData, transData: transData, yoData: yoData, tuData: tuData, elData: elData, nosData: nosData, ellosData: ellosData});
+      localStorage.setItem("verbs", JSON.stringify(verbs));
       
   }
 }
@@ -127,8 +126,9 @@ function submitData(evt){
   
     tr.append(newTd);
   }
+
  
-function removeEle(evt) {
+  function removeEle(evt) {
     let ele = evt.target.closest('tr');
     delete allData[ele.id];
     ele.parentNode.removeChild(ele);
