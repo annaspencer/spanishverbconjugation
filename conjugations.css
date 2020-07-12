@@ -1,0 +1,100 @@
+ h1 {
+   text-align: center;
+   padding: 20px;
+   color: pink;
+   font-family: 'Montserrat Subrayada', sans-serif;
+   font-size: 48px;
+ }
+
+ body {
+   font-family: 'Bebas Neue', cursive;
+   font-size: 28px;
+   margin: 30px;
+   background-image: url(colorful-painted-buildings-2388639.jpg);
+ }
+
+ h6 {
+   font-size: 22px;
+   color: rgb(148, 16, 148);
+   background-color: chartreuse;
+   opacity: 70%;
+   width: 200px;
+ }
+
+ section {
+   border: 2px solid grey;
+   border-radius: 6px;
+   padding: 10px;
+   margin: 10px 10px 10px 0;
+   display: flex;
+   position: left;
+ }
+
+ aside {
+   justify-content: space-between;
+   flex-basis: 50%;
+   padding: 4px 10px;
+   color: orange
+ }
+
+ input {
+   display: block;
+   margin: 10px 0 20px 0;
+   border-radius: 5px;
+   border: 1px solid grey;
+   font-size: 20px;
+   padding: 6px;
+ }
+
+ #tableForm {
+   color: yellow;
+   text-shadow: grey
+ }
+
+ button {
+   cursor: pointer;
+   width: 90px;
+   height: 30px;
+   border-radius: 8px;
+   border: 1px solid red;
+   background-color: aquamarine;
+   font-size: 16px;
+   font-family: 'Bebas Neue', cursive;
+   opacity: 70%;
+ }
+
+ th {
+   color: green
+ }
+
+ td {
+   text-align: center;
+   border: 1px solid grey;
+   border-radius: 15px;
+ }
+
+ table {
+   margin: 50px 0;
+   border-collapse: collapse;
+   padding: 4px;
+   width: 80%;
+   background-color: aliceblue;
+   border-radius: 10px;
+ }
+
+ #clear-box {
+   padding-top: 70%;
+ }
+
+ footer {
+   text-align: center;
+   padding: 10px;
+   position: bottom;
+   color: black;
+   background-color: gray;
+   opacity: 65%;
+ }
+
+ .deleteBtn {
+   cursor: pointer;
+ }

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Spanish Conjugations</title>
+  <link rel="stylesheet" href="conjugations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Modak&family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Modak&family=Montserrat+Subrayada&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <h1>Spanish Verb Conjugations</h1>
+
+  <section>
+    <aside>
+
+      <form id="tableForm">
+        <h6>Input Verb + tab / select next field + submit when completed</h6>
+        <label for="verb">Verb</label>
+        <input type="text" id="verb" autofocus />
+
+        <label for="translation">Translation</label>
+        <input type="text" id="translation" />
+
+        <label for="yo"> Yo </label>
+        <input type="text" id="yo" />
+
+        <label for="tu"> Tu </label>
+        <input type="text" id="tu" />
+
+        <label for="elUstedElla">El, Ella, Usted</label>
+        <input type="text" id="elUstedElla" />
+
+        <label for="nosotros">Nosotros, Vosotros</label>
+        <input type="text" id="nosotros" />
+
+        <label for="ellaUstedesEllos">Ellos, Ellas, Ustedes</label>
+        <input type="text" id="ellaUstedesEllos" />
+
+        <button>submit</button>
+      </form>
+    </aside>
+    <table id="conjugationsTable" class="conjugationsTable">
+      <thead>
+        <tr>
+          <th>Verb</th>
+          <th>Translation</th>
+          <th>Yo</th>
+          <th>Tu</th>
+          <th>El, Ella, Usted</th>
+          <th>Nosotros, Vosotros</th>
+          <th>Ellos, Ellas, Ustedes</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+
+    </table>
+    <div id="clear-box">
+      <button id="clear-button"> clear all </button>
+    </div>
+  </section>
+
+  <script src="conjugations.js"></script>
+
+
+
+</body>
+<footer>
+  Verb Table is automatically saved. Select x's to delete a row. copyright Anna Spencer 2020 annaspencerdev@gmail.com
+  <footer>
+
+</html>
