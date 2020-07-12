@@ -12,21 +12,21 @@ let conjugationsTbody = document.querySelector('#conjugationsTable tbody');
 let allData = {};
 let dataId = 0;
 
-let savedVerbs = JSON.parse(localStorage.getItem("verbs")) || [];
-let deletedVerbs = JSON.parse(localStorage.getItem("deleted")) || [];
+let verbs = JSON.parse(localStorage.getItem("verbs")) || [];
 
-for (let i = 0; i < savedVerbs.length; i++) {
+
+for (let i = 0; i < verbs.length; i++) {
   let newTr = document.createElement('tr');
     newTr.id = 'data' + dataId;
     
   
-    appendTd(newTr, savedVerbs[i].verbData);
-    appendTd(newTr, savedVerbs[i].transData);
-    appendTd(newTr, savedVerbs[i].yoData);
-    appendTd(newTr, savedVerbs[i].tuData);
-    appendTd(newTr, savedVerbs[i].elData);
-    appendTd(newTr, savedVerbs[i].nosData);
-    appendTd(newTr, savedVerbs[i].ellosData);
+    appendTd(newTr, verbs[i].verbData);
+    appendTd(newTr, verbs[i].transData);
+    appendTd(newTr, verbs[i].yoData);
+    appendTd(newTr, verbs[i].tuData);
+    appendTd(newTr, verbs[i].elData);
+    appendTd(newTr, verbs[i].nosData);
+    appendTd(newTr, verbs[i].ellosData);
     appendDeleteBtn(newTr);
     conjugationsTbody.append(newTr);
 }
@@ -60,7 +60,7 @@ function submitData(evt){
       nosotrosInput.value = '';
       ellosInput.value = '';
       
-      savedVerbs.push({ verbData: verbData, transData: transData, yoData: yoData, tuData: tuData, elData: elData, nosData: nosData, ellosData: ellosData});
+      verbs.push({ verbData: verbData, transData: transData, yoData: yoData, tuData: tuData, elData: elData, nosData: nosData, ellosData: ellosData});
       localStorage.setItem("verbs", JSON.stringify(savedVerbs));
       
   }
@@ -127,19 +127,21 @@ function submitData(evt){
   
     tr.append(newTd);
   }
-
  
-  function removeEle(evt) {
+function removeEle(evt) {
     let ele = evt.target.closest('tr');
-    
-    console.log(ele);
- 
-    
     delete allData[ele.id];
     ele.parentNode.removeChild(ele);
+    let li = evt.target.parentElement;
+    let index = Array.prototype.indexOf.call(verbs, li);
+    removeLocalStorage(index)
     
-    deletedVerbs.push(allData[ele.id]);
-    localStorage.setItem("deleted", JSON.stringify(deletedVerbs));
+  }
+
+   function removeLocalStorage(index){
+    let store = JSON.parse(localStorage.getItem("verbs")) || [];
+    store.splice(index, 1);
+    localStorage.setItem('verbs', JSON.stringify(store));
   }
 
   let clear = document.getElementById('clear-box');
