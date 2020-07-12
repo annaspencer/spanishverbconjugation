@@ -1,0 +1,77 @@
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: pink;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 36px;
+    background-color: gray;
+    opacity: 65%;
+  }
+ 
+  body {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    margin: 30px;
+    background-image: url(photo-of-monument-during-daytime-3290068-1.jpg);
+  }
+ 
+  h6 {
+    font-size: 22px;
+    color: rgb(148, 16, 148);
+    background-color: chartreuse;
+    opacity: 70%;
+    width: 200px;
+  }
+ 
+  
+ 
+  form {
+    display: block;
+    margin: 10px 0 20px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 20px;
+    padding: 80px;
+    align-items: center;
+  }
+
+  input[type=text] {
+    padding:10px;
+    margin:10px 10px; 
+  }
+
+  textarea {
+    width:100%;
+    resize: vertical;
+    padding:15px;
+    border-radius:15px;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    height:150px;
+  }
+  
+ 
+
+  button {
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid red;
+    background-color: aquamarine;
+    font-size: 16px;
+    font-family: 'Bebas Neue', cursive;
+    opacity: 70%;
+  }
+ 
+
+ 
+  footer {
+    text-align: center;
+    padding: 10px;
+    position: bottom;
+    color: black;
+    background-color: gray;
+    opacity: 65%;
+  }
+ 
