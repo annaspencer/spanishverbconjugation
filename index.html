@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Modak&family=Montserrat+Subrayada&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Modak&family=Montserrat+Subrayada&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="print.css" type="text/css" media="print" />
 </head>
 
 <body>
@@ -14,7 +15,10 @@
 
   <section>
     <aside>
-
+      
+      <div id="notes" class="print" >
+        Notes:
+      </div>
       <form id="tableForm">
         <h6>Input Verb + tab / select next field + submit when completed</h6>
         <label for="verb">Verb</label>
@@ -41,7 +45,8 @@
         <button>submit</button>
       </form>
     </aside>
-    <table id="conjugationsTable" class="conjugationsTable">
+    <div class="print">
+    <table id="conjugationsTable" class="conjugationsTable" class="print">
       <thead>
         <tr>
           <th>Verb</th>
@@ -58,8 +63,10 @@
       </tbody>
 
     </table>
+  </div>
     <div id="clear-box">
-      <button id="clear-button"> clear all </button>
+      <button onclick="window.print();return false;">Print Table</button>
+      <button id="clear-button"> DELETE TABLE </button>
     </div>
   </section>
 
@@ -69,14 +76,8 @@
 
 </body>
 <footer>
-<<<<<<< HEAD
-
- 
-copyright Anna Spencer 2020
-
-=======
-  Verb Table is automatically saved to your browser. Select x's to delete a row. copyright Anna Spencer 2020 
->>>>>>> 86321ac4b54975ac80f6e0efe4adddfd785d836f
+  Verb Table is automatically saved to your browser. Select x's to delete a row. 
+  <a href="contact.html" >copyright Anna Spencer 2020 </a>
   <footer>
 
 </html>

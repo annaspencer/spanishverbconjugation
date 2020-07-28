@@ -1,0 +1,10 @@
+body {
+    visibility:hidden;
+}
+.print {
+    visibility:visible;
+}
+
+#notes {
+    visibility:visible;
+}

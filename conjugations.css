@@ -7,11 +7,15 @@
  }
 
  body {
+   
    font-family: 'Bebas Neue', cursive;
    font-size: 28px;
    margin: 30px;
    background-image: url(colorful-painted-buildings-2388639.jpg);
+   
+
  }
+ 
 
  h6 {
    font-size: 22px;
@@ -97,4 +101,8 @@
 
  .deleteBtn {
    cursor: pointer;
+ }
+
+ #notes {
+   visibility: hidden;
  }
