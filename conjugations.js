@@ -7,7 +7,7 @@ let nosotrosInput = document.getElementById('nosotros');
 let ellosInput = document.getElementById('ellaUstedesEllos');
 let inputForm = document.getElementById('tableForm');
 let conjugationsTbody = document.querySelector('#conjugationsTable tbody');
-
+let itemsList =[];
 
 let allData = {};
 let dataId = 0;
@@ -59,6 +59,7 @@ function submitData(evt){
       nosotrosInput.value = '';
       ellosInput.value = '';
       
+      itemsList.push({ verbData: verbData, transData: transData, yoData: yoData, tuData: tuData, elData: elData, nosData: nosData, ellosData: ellosData});
     verbs.push({ verbData: verbData, transData: transData, yoData: yoData, tuData: tuData, elData: elData, nosData: nosData, ellosData: ellosData});
       localStorage.setItem("verbs", JSON.stringify(verbs));
       
@@ -130,10 +131,8 @@ function submitData(evt){
  
   function removeEle(evt) {
     let ele = evt.target.closest('tr');
-    delete allData[ele.id];
     ele.parentNode.removeChild(ele);
-    let li = evt.target.parentElement;
-    let index = Array.prototype.indexOf.call(verbs, li);
+    let index = itemsList.indexOf.call(ele);
     removeLocalStorage(index)
     
   }
