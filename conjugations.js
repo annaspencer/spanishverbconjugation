@@ -10,7 +10,7 @@ let conjugationsTbody = document.querySelector('#conjugationsTable tbody');
 
 let allData = {};
 let verbs = JSON.parse(localStorage.getItem("verbs")) || [];
-let dataId = verbs[verbs.length - 1].id;
+let dataId = verbs.length ? verbs[verbs.length - 1].id : 0;
 
 
 for (let i = 0; i < verbs.length; i++) {
