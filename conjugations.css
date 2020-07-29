@@ -68,13 +68,15 @@
  }
 
  th {
-   color: green
+   color: green;
+   padding-right: 60px
  }
 
  td {
    text-align: center;
    border: 1px solid grey;
    border-radius: 15px;
+   padding-right: 20px;
  }
 
  table {
@@ -105,4 +107,13 @@
 
  #notes {
    visibility: hidden;
+ }
+
+ #howto {
+  text-align: center;
+  
+  color: rgb(52, 11, 235);
+  background-color: rgb(247, 151, 196);
+  font-family: 'Bebas Neue', cursive;
+  opacity: 80%;
  }

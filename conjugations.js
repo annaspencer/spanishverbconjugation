@@ -144,7 +144,7 @@ function submitData(evt){
     localStorage.setItem('verbs', JSON.stringify(store));
   }
 
-  let clear = document.getElementById('clear-box');
+  let clear = document.getElementById('clear-button');
   clear.addEventListener('click', function(){
     localStorage.clear();
     window.location.reload(false);

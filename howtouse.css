@@ -1,0 +1,76 @@
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: pink;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 36px;
+    
+   
+  }
+ 
+  body {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    margin: 30px;
+    text-align: center;
+    background-image: url(jeremy-lwanga-azE50UpJDP0-unsplash-1.jpg);
+  }
+
+  
+ 
+ 
+  h2 {
+    font-size: 36px;
+    color: rgb(148, 16, 148);
+    background-color: chartreuse;
+    opacity: 70%;
+    border: 4px purple;
+    
+  }
+ 
+  
+ 
+  
+ #instructions {
+    padding: 50px;
+    text-indent: 10px;
+    text-align: left;
+    font-size: 26px;
+    color: rgb(52, 11, 235);
+    background-color: rgb(247, 151, 196);
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 20px orangered;
+    position: relative;
+    list-style-image: url(NicePng_day-of-the-dead_2684291.png)
+   }
+
+   #suggestions {
+    padding: 50px;
+    text-indent: 10px;
+    text-align: left;
+    font-size: 25px;
+    color: rgb(235, 45, 11);
+    background-color: rgb(240, 255, 109);
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 4px orangered;
+    list-style-image: url(NicePng_music-instruments-clipart-png_9144983.png)
+   }
+
+   #example {
+       margin: 5% 0%;
+        background-color: aqua;
+       
+   }
+
+   .sheet {
+    padding:20px;
+    width: 500px;
+    height: 450px
+   }
+   .mx {
+       height:300px;
+       width:250px;
+       position: absolute;
+       top: 20px;
+       right: 200px;
+   }
