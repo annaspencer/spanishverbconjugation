@@ -12,15 +12,28 @@
 
 <body>
   <h1>Spanish Verb Conjugations</h1>
+  
+  
 
   <section>
+
+
     <aside>
-      <a href="howtouse.html" class="button" id="howto">Learn how to use this page to create a table</a>
+      <div id="center-box">
+        <a href="howtouse.html" class="button" id="howto">Learn how to use this page to create a table</a>
+       </div>
       <div id="notes" class="print" >
         Notes:
       </div>
+      <div class="buttons">
+        <button id="last-button"> DELETE LAST LINE </button>
+         <button onclick="window.print();return false;">Print Table</button>
+         <button id="clear-button"> DELETE TABLE </button>
+         </div>
       <form id="tableForm">
+       
         <h6>Input Verb + tab / select next field + submit when completed</h6>
+
         <label for="verb">Verb</label>
         <input type="text" id="verb" autofocus />
 
@@ -45,6 +58,7 @@
         <button>submit</button>
       </form>
     </aside>
+    
     <div class="print">
     <table id="conjugationsTable" class="conjugationsTable" class="print">
       <thead>
@@ -64,20 +78,16 @@
 
     </table>
   </div>
-    <div id="clear-box">
-      <button onclick="window.print();return false;">Print Table</button>
-      <button id="clear-button"> DELETE TABLE </button>
-    </div>
+
   </section>
 
+  <footer>
+    Verb Table is automatically saved to your browser. 
+   <a href="contact.html" >copyright Anna Spencer 2020 </a>
+  </footer>
   <script src="conjugations.js"></script>
 
-
-
 </body>
-<footer>
-  Verb Table is automatically saved to your browser. Select x's to delete a row. 
-  <a href="contact.html" >copyright Anna Spencer 2020 </a>
-  <footer>
+
 
 </html>

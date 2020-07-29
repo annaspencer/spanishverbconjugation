@@ -34,11 +34,17 @@
    position: left;
  }
 
+
+
+
+
+
  aside {
    justify-content: space-between;
    flex-basis: 50%;
    padding: 4px 10px;
-   color: orange
+   color: orange;
+   
  }
 
  input {
@@ -50,26 +56,45 @@
    padding: 6px;
  }
 
+
+
  #tableForm {
    color: yellow;
-   text-shadow: grey
+   text-shadow: grey;
+   margin-top: 20px;
+   width: 200px;
+   position: relative;
  }
 
  button {
+   
    cursor: pointer;
-   width: 90px;
-   height: 30px;
+   width: 200px;
+   height: 60px;
    border-radius: 8px;
    border: 1px solid red;
    background-color: aquamarine;
    font-size: 16px;
    font-family: 'Bebas Neue', cursive;
    opacity: 70%;
+   margin: 0 20px
  }
 
+ .buttons {
+   width: 800px;
+   margin-left: 35%;
+   position: absolute;
+  
+  
+ }
+ 
+ #last-button {
+   padding: 14px;
+ }
  th {
    color: green;
-   padding-right: 60px
+   padding-right: 30px;
+   padding-left: 30px
  }
 
  td {
@@ -80,7 +105,8 @@
  }
 
  table {
-   margin: 50px 0;
+   margin-top: 150px;
+   
    border-collapse: collapse;
    padding: 4px;
    width: 80%;
@@ -88,9 +114,7 @@
    border-radius: 10px;
  }
 
- #clear-box {
-   padding-top: 70%;
- }
+
 
  footer {
    text-align: center;
@@ -101,7 +125,7 @@
    opacity: 65%;
  }
 
- .deleteBtn {
+ .checkBtn {
    cursor: pointer;
  }
 
@@ -109,11 +133,21 @@
    visibility: hidden;
  }
 
+
+ #center-box {
+  position: absolute;
+  margin-top: 20px;
+  width:700px;
+  height: 150px;
+ }
+
  #howto {
-  text-align: center;
-  
+   margin-top: 20%;
   color: rgb(52, 11, 235);
   background-color: rgb(247, 151, 196);
   font-family: 'Bebas Neue', cursive;
   opacity: 80%;
+  padding:10px;
  }
+
+ 
