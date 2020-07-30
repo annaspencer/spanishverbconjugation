@@ -7,6 +7,10 @@
  }
 
  body {
+  grid-template-areas: 
+ 
+  "center-box" "buttons"
+  "tableForm"  "print";
    
    font-family: 'Bebas Neue', cursive;
    font-size: 28px;
@@ -150,4 +154,17 @@
   padding:10px;
  }
 
+
  
+  @media  (max-width:600px) {
+  body {   
+    grid-template-areas:
+    "head"
+    "center-box"
+    "buttons"
+    "tableForm"
+    "print";
+
+    
+  }
+}

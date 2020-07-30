@@ -74,3 +74,11 @@ h1 {
        top: 20px;
        right: 200px;
    }
+
+   @media screen and (max-width:705px) 
+{ 
+.sheet { width: 50%; }
+  
+  .mx, .sheet, #example{
+     display: none;}
+ }
